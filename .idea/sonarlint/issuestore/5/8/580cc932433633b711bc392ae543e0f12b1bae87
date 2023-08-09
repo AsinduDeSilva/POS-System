@@ -1,0 +1,12 @@
+
+7
+java:S1220""Move this file to a named package.8ÅïÖª1
+]	java:S125"<This block of commented-out lines of code should be removed.(¢¬¯ÿÿÿÿÿ8™•×ª1
+N
+java:S1128",Remove this unused import 'db.DbConnection'.(¤¦ç“ûÿÿÿÿ8™•×ª1
+U
+java:S1128"3Remove this unused import 'javafx.fxml.FXMLLoader'.(À‡ô³úÿÿÿÿ8™•×ª1
+M
+java:S1128"0Remove this unused import 'javafx.scene.Parent'.(²ä¡È8™•×ª1
+L
+java:S1128"/Remove this unused import 'javafx.scene.Scene'.(Õü²8™•×ª1
