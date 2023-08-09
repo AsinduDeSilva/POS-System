@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0344c805-0b0c-4b4a-a4d0-e2ab3d0e73df" name="Changes" comment="Created database script">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="0344c805-0b0c-4b4a-a4d0-e2ab3d0e73df" name="Changes" comment="Created DbConnection">
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/580cc932433633b711bc392ae543e0f12b1bae87" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/8/08e3972e31fda840d43e614c583101fab2d4f86a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/1/11bc689a42151172df7fecbc2631bcd0dcc61ea4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/c/4c0af8ab650a599a23154afb175365294353e606" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/8/580cc932433633b711bc392ae543e0f12b1bae87" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/4/7492ebf3259d3f6a1bf20a354fdfc0c0e301185f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/e/8e2efd5556e1055de49628692613d2236e3e330d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/f/8fabe3755e1ead5799c15bb382666c6712f45baa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/9/c941749f9fc22dc56a4d0dccc54275b46aa3bd69" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/AppInitializer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/bo/BOFactory.java" afterDir="false" />
@@ -35,16 +20,11 @@
       <change afterPath="$PROJECT_DIR$/src/dao/SuperDAO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/dao/custom/LoginDAO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/LoginDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/DbConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/util/ObjectPasser.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/view/LoginForm.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/view/MenuBar.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/view/assets/person-white.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POS_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/POS_System.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +106,7 @@
       <workItem from="1691505047817" duration="8897000" />
       <workItem from="1691516147589" duration="615000" />
       <workItem from="1691571654939" duration="85000" />
-      <workItem from="1691583875057" duration="2547000" />
+      <workItem from="1691583875057" duration="3670000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1691333552519</created>
@@ -149,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691586352844</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created DbConnection">
+      <created>1691586625371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691586625371</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +146,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Created Add Ttem view" />
     <MESSAGE value="Created database script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created database script" />
+    <MESSAGE value="Created DbConnection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created DbConnection" />
   </component>
 </project>

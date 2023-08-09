@@ -26,7 +26,23 @@ public class LoginController {
         String username = txtUsername.getText();
         String password = txtPassword.getText();
 
-
+        Boolean result = loginBO.checkPassword(username,password);
+        if(Boolean.TRUE.equals(result)){
+            String userFullName = loginBO.getUserFullName(username);
+            ObjectPasser.userFullName = userFullName;
+            Parent load = FXMLLoader.load(getClass().getResource("../view/MenuBar.fxml"));
+            Scene scene = new Scene(load);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.setTitle("Point Of Sale System");
+            stage.show();
+            Stage loginStage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow();
+            loginStage.close();
+        }else{
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Login Failed!");
+            alert.show();
+        }
 
     }
 }
