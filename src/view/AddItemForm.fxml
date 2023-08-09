@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="679.0" prefWidth="864.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemController">
+    <children>
+        <Label layoutX="26.0" layoutY="18.0" text="ADD ITEMS">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextField layoutX="147.0" layoutY="80.0" promptText="ItemID" />
+        <TextField layoutX="147.0" layoutY="116.0" prefHeight="26.0" prefWidth="285.0" promptText="Item Name" />
+        <Label layoutX="43.0" layoutY="84.0" text="Item ID :" />
+        <Label layoutX="43.0" layoutY="119.0" text="Item Name :" />
+        <TextField layoutX="147.0" layoutY="153.0" prefHeight="26.0" prefWidth="286.0" promptText="Batch No" />
+        <Label layoutX="43.0" layoutY="156.0" text="Batch No :" />
+        <TextField layoutX="595.0" layoutY="152.0" prefHeight="24.0" prefWidth="302.0" promptText="Batch No" />
+        <Label layoutX="491.0" layoutY="155.0" text="Exp Date :" />
+        <TextField layoutX="595.0" layoutY="115.0" prefHeight="24.0" prefWidth="302.0" promptText="Batch No" />
+        <Label layoutX="491.0" layoutY="118.0" text="Supplier :" />
+        <TextField layoutX="595.0" layoutY="79.0" prefHeight="24.0" prefWidth="302.0" promptText="Batch No" />
+        <Label layoutX="491.0" layoutY="82.0" text="Item Price :" />
+        <Separator layoutX="47.0" layoutY="253.0" prefHeight="0.0" prefWidth="887.0" />
+        <TableView layoutX="26.0" layoutY="325.0" prefHeight="334.0" prefWidth="887.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+            </columns>
+        </TableView>
+        <JFXButton buttonType="RAISED" layoutX="799.0" layoutY="205.0" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #1abc9c;" text="ADD">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="684.0" layoutY="205.0" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #7f8c8d;" text="Clear">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </JFXButton>
+
+    </children>
+</AnchorPane>
