@@ -3,19 +3,18 @@ package controller;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 import util.ObjectPasser;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.net.URL;
-import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
 import java.util.ResourceBundle;
 
 public class MenuBarController implements Initializable {
@@ -45,5 +44,10 @@ public class MenuBarController implements Initializable {
     }
 
 
-
+    public void addItemOnAction(javafx.event.ActionEvent actionEvent) throws IOException {
+        URL resource = getClass().getResource("/view/AddItemForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        playgroundAnchorpane.getChildren().clear();
+        playgroundAnchorpane.getChildren().add(load);
+    }
 }

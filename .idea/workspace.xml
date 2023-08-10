@@ -4,27 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0344c805-0b0c-4b4a-a4d0-e2ab3d0e73df" name="Changes" comment="Created DbConnection">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/BOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/custom/LoginBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/LoginBoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/MenuBarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/CRUDUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/DAOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/SuperDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/custom/LoginDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/LoginDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/ObjectPasser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/LoginForm.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/MenuBar.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/assets/person-white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0344c805-0b0c-4b4a-a4d0-e2ab3d0e73df" name="Changes" comment="Initiated creating MenuBar">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lombok.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/SuperBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/ItemBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/ItemBOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/ItemDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/ItemDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/ItemDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/lombok.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/style/MenuBarStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/POS_System.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/BOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/BOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/LoginBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/LoginBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AddItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MenuBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuBarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/AddItemForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AddItemForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MenuBar.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +34,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2TcDQKi7QY20nwX72850IonyG7g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,12 +60,12 @@
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Asindu/iCET/Courseworks/POS System/POS_System/src/lib/jfoenix-8.0.10.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Asindu/iCET/Courseworks/POS System/POS_System/src/lib/lombok.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
@@ -106,7 +109,11 @@
       <workItem from="1691505047817" duration="8897000" />
       <workItem from="1691516147589" duration="615000" />
       <workItem from="1691571654939" duration="85000" />
-      <workItem from="1691583875057" duration="3670000" />
+      <workItem from="1691583875057" duration="4191000" />
+      <workItem from="1691590393174" duration="624000" />
+      <workItem from="1691591718925" duration="8888000" />
+      <workItem from="1691604128949" duration="40000" />
+      <workItem from="1691643812583" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1691333552519</created>
@@ -136,7 +143,21 @@
       <option name="project" value="LOCAL" />
       <updated>1691586625371</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created Login screen">
+      <created>1691587794043</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691587794043</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Initiated creating MenuBar">
+      <created>1691588005526</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691588005526</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +168,8 @@
     <MESSAGE value="Created Add Ttem view" />
     <MESSAGE value="Created database script" />
     <MESSAGE value="Created DbConnection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created DbConnection" />
+    <MESSAGE value="Created Login screen" />
+    <MESSAGE value="Initiated creating MenuBar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initiated creating MenuBar" />
   </component>
 </project>

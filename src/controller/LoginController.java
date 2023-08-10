@@ -20,7 +20,7 @@ public class LoginController {
     public TextField txtUsername;
     public TextField txtPassword;
 
-    LoginBO loginBO = BOFactory.getInstance(BOFactory.BoTypes.LOGIN);
+    LoginBO loginBO = (LoginBO) BOFactory.getInstance().getBO(BOFactory.BoTypes.LOGIN);
 
     public void btnLoginOnClick(ActionEvent actionEvent) throws IOException {
         String username = txtUsername.getText();
@@ -40,8 +40,7 @@ public class LoginController {
             Stage loginStage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow();
             loginStage.close();
         }else{
-            Alert alert = new Alert(Alert.AlertType.ERROR, "Login Failed!");
-            alert.show();
+            new Alert(Alert.AlertType.ERROR, "Login Failed!").show();
         }
 
     }
