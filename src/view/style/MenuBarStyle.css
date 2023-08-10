@@ -1,0 +1,35 @@
+#btnMenuPos{
+    -fx-background-color: #3498db;
+    -fx-background-radius: 5 0 0 5;
+}
+
+#btnMenuPos:hover{
+    -fx-background-color: #2980b9;
+}
+
+#btnMenuOrders {
+    -fx-background-color: #3498db;
+    -fx-background-radius: 0 0 0 0;
+}
+
+#btnMenuCustomers{
+    -fx-background-color: #3498db;
+    -fx-background-radius: 0 0 0 0;
+}
+
+#btnMenuItems{
+    -fx-background-color: #3498db;
+    -fx-background-radius: 0 5 5 0;
+}
+
+#btnMenuItems:hover{
+    -fx-background-color: #2980b9;
+}
+
+#btnMenuOrders:hover{
+    -fx-background-color: #2980b9;
+}
+
+#btnMenuCustomers:hover{
+    -fx-background-color: #2980b9;
+}
