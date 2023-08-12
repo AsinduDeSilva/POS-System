@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0344c805-0b0c-4b4a-a4d0-e2ab3d0e73df" name="Changes" comment="Initiated creating MenuBar">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lombok.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/SuperBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/custom/ItemBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/ItemBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/custom/ItemDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/ItemDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/ItemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/lombok.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/style/MenuBarStyle.css" afterDir="false" />
+    <list default="true" id="0344c805-0b0c-4b4a-a4d0-e2ab3d0e73df" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POS_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/POS_System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/BOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/BOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/LoginBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/LoginBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/ItemBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/ItemBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/ItemBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/impl/ItemBOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/AddItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MenuBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuBarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/ItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/ItemDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/ItemDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/impl/ItemDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/AddItemForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AddItemForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MenuBar.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +101,10 @@
       <workItem from="1691591718925" duration="8888000" />
       <workItem from="1691604128949" duration="40000" />
       <workItem from="1691643812583" duration="34000" />
+      <workItem from="1691690063472" duration="762000" />
+      <workItem from="1691764650767" duration="6695000" />
+      <workItem from="1691773209044" duration="422000" />
+      <workItem from="1691850125679" duration="799000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1691333552519</created>
@@ -157,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1691588005526</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added clock and menu buttons to Menubar">
+      <created>1691690528681</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691690528681</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implemented Add Item process">
+      <created>1691690696522</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691690696522</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +175,8 @@
     <MESSAGE value="Created DbConnection" />
     <MESSAGE value="Created Login screen" />
     <MESSAGE value="Initiated creating MenuBar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initiated creating MenuBar" />
+    <MESSAGE value="Added clock and menu buttons to Menubar" />
+    <MESSAGE value="Implemented Add Item process" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Add Item process" />
   </component>
 </project>

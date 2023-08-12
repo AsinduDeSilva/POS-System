@@ -3,6 +3,12 @@ package dao.custom;
 import dao.SuperDAO;
 import entity.Item;
 
+import java.util.ArrayList;
+
 public interface ItemDAO extends SuperDAO {
-    public boolean save(Item item);
+    boolean save(Item item);
+    String getLastItemId() throws RuntimeException;
+
+    ArrayList<Item> getAllItems();
+
 }
