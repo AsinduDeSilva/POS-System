@@ -4,11 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0344c805-0b0c-4b4a-a4d0-e2ab3d0e73df" name="Changes" comment="">
+    <list default="true" id="0344c805-0b0c-4b4a-a4d0-e2ab3d0e73df" name="Changes" comment="Added a table to view all items">
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/CustomerBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/CustomerBOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/CustomerFormControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/PlaceOrderFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/CustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/CustomerDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/CustomerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/CustomerForm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/Dashboard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/icons8-add-user-male-60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/icons8-address-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/icons8-administrator-male.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/icons8-archive-list-of-parts-60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/icons8-back-arrow-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/icons8-customer-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/icons8-downtown-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/icons8-male-user-60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/icons8-pie-chart-60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/icons8-postcode-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/icons8-search-client-60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/icons8-user-tag-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/loginBackground.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/assets/note.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/style/PlaceOrderStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/POS_System.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/BOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/BOFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bo/custom/ItemBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/ItemBO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/ItemBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/impl/ItemBOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/AddItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DAOFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/custom/ItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/ItemDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/ItemDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/impl/ItemDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/AddItemForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AddItemForm.fxml" afterDir="false" />
@@ -22,8 +50,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,7 +75,7 @@
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Asindu/iCET/Courseworks/POS System/POS_System/src/lib/lombok.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Asindu/iCET/Courseworks/POS System/POS_System/src/lib/mysql-connector-java-8.0.11.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -64,6 +92,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Asindu\iCET\Courseworks\POS System\POS_System\src\view\assets" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AppInitializer" />
@@ -104,7 +137,13 @@
       <workItem from="1691690063472" duration="762000" />
       <workItem from="1691764650767" duration="6695000" />
       <workItem from="1691773209044" duration="422000" />
-      <workItem from="1691850125679" duration="799000" />
+      <workItem from="1691850125679" duration="7796000" />
+      <workItem from="1691858616483" duration="7000" />
+      <workItem from="1691995039785" duration="489000" />
+      <workItem from="1692006019012" duration="22000" />
+      <workItem from="1692022053440" duration="36000" />
+      <workItem from="1692369761606" duration="361000" />
+      <workItem from="1692370131255" duration="1460000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1691333552519</created>
@@ -162,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691690696522</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added a table to view all items">
+      <created>1691851070594</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1691851070594</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +223,7 @@
     <MESSAGE value="Initiated creating MenuBar" />
     <MESSAGE value="Added clock and menu buttons to Menubar" />
     <MESSAGE value="Implemented Add Item process" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Add Item process" />
+    <MESSAGE value="Added a table to view all items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a table to view all items" />
   </component>
 </project>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="placeOrderContext" prefHeight="667.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@style/PlaceOrderStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrderFormController">
+    <children>
+        <AnchorPane cache="true" prefHeight="667.0" prefWidth="286.0" style="-fx-background-color: #2c3e50;">
+            <children>
+                <Label fx:id="txtCustomerNameLabel" alignment="CENTER" layoutX="74.0" layoutY="39.0" prefHeight="25.0" prefWidth="122.0" text="Hello World," textFill="WHITE">
+                    <font>
+                        <Font name="Open Sans ExtraBold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="txtOrderIDLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="64.0" prefHeight="20.0" prefWidth="153.0" text="Order ID" textFill="WHITE">
+                    <font>
+                        <Font name="Open Sans Regular" size="14.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="43.0" layoutY="96.0" prefHeight="0.0" prefWidth="200.0" />
+                <TableView fx:id="tblCart" layoutX="12.0" layoutY="112.0" prefHeight="253.0" prefWidth="261.0" style="-fx-selection-bar: red;" styleClass="noheader">
+                    <columns>
+                        <TableColumn fx:id="colItemCode" prefWidth="94.0" style="-fx-text-align: center;" styleClass="noheader" text="ItemCode" />
+                        <TableColumn fx:id="colQty" text="QTY" />
+                        <TableColumn fx:id="colPrice" prefWidth="86.0" text="price" />
+                    </columns>
+                </TableView>
+                <JFXButton fx:id="btnPay" disable="true" layoutX="52.0" layoutY="531.0" onAction="#btn_payOnAction" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: #27ae60;" text="PAY" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="25.0" layoutY="485.0" text="Total" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="txtGrandTotal" alignment="CENTER_RIGHT" layoutX="113.0" layoutY="479.0" prefHeight="26.0" prefWidth="136.0" text="0.00" textAlignment="RIGHT" textFill="WHITE" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="37.0">
+                    <font>
+                        <Font name="System Bold" size="21.0" />
+                    </font>
+                </Label>
+                <JFXButton buttonType="RAISED" disable="true" layoutX="91.0" layoutY="374.0" prefHeight="23.0" prefWidth="84.0" style="-fx-background-color: #718093;" text="MODIFY" textFill="WHITE" visible="false">
+                    <font>
+                        <Font name="System Bold" size="10.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="btnRemoveRow" buttonType="RAISED" disable="true" layoutX="190.0" layoutY="374.0" onAction="#removeSelectedItemFromOrder" prefHeight="23.0" prefWidth="84.0" style="-fx-background-color: #c23616;" text="REMOVE" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="11.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="69.0" layoutY="581.0" onAction="#clearCart" prefHeight="32.0" prefWidth="136.0" style="-fx-background-color: #b33939;" text="Clear Order" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="25.0" layoutY="444.0" text="Discount" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblDiscountedAmount" alignment="CENTER_RIGHT" layoutX="122.0" layoutY="442.0" prefHeight="19.0" prefWidth="128.0" text="-0.00" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblSubTotal" alignment="CENTER_RIGHT" layoutX="121.0" layoutY="422.0" prefHeight="19.0" prefWidth="128.0" text="0.00" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="25.0" layoutY="424.0" text="Sub Total" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Separator layoutX="318.0" layoutY="177.0" prefHeight="9.0" prefWidth="643.0" />
+        <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="327.0" layoutY="92.0">
+            <image>
+                <Image url="@assets/icons8-customer-100.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="txtCustomerName" layoutX="386.0" layoutY="105.0" text="Customer name" wrapText="true">
+            <font>
+                <Font name="Roboto Medium" size="17.0" />
+            </font>
+        </Label>
+        <ImageView layoutX="661.0" layoutY="93.0">
+            <image>
+                <Image url="@assets/icons8-address-50.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="txtCustomerAddress" layoutX="736.0" layoutY="115.0" text="Customer Addresss" wrapText="true">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="btnAddToCart" buttonType="RAISED" disable="true" layoutX="622.0" layoutY="538.0" onAction="#btn_addToCart_onAction" prefHeight="43.0" prefWidth="153.0" style="-fx-background-color: #2980b9;" text="Add To Cart" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </JFXButton>
+        <Label fx:id="txtCaptionQtyOnHand" layoutX="382.0" layoutY="377.0" text="Qty On Hand : " textFill="#616060">
+            <font>
+                <Font name="Roboto Black" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="364.0" layoutY="427.0" text="Unit Price (Rs.): " textFill="#616060">
+            <font>
+                <Font name="Roboto Black" size="18.0" />
+            </font>
+        </Label>
+        <JFXComboBox fx:id="cmbItemSelector" layoutX="368.0" layoutY="318.0" onAction="#cmbItemSelectorOnAction" prefHeight="32.0" prefWidth="192.0" promptText="Select Item Code" />
+        <Label layoutX="712.0" layoutY="265.0" text="Order ID : ">
+            <font>
+                <Font name="Roboto Black" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtReqAmount" editable="false" layoutX="657.0" layoutY="372.0" onKeyReleased="#enableAddToCart" prefHeight="34.0" prefWidth="171.0" promptText="Req. Amount">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Label fx:id="lblOrderID" layoutX="809.0" layoutY="265.0" text="O-001" textFill="#2980b9">
+            <font>
+                <Font name="Roboto Black" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="799.0" layoutY="418.0" text="\%">
+            <font>
+                <Font name="Roboto Black" size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="txtQtyOnHand" layoutX="502.0" layoutY="377.0" prefHeight="24.0" prefWidth="32.0" text="0" AnchorPane.leftAnchor="502.0" AnchorPane.rightAnchor="341.0">
+            <font>
+                <Font name="Roboto Medium" size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="txtUnitPrice" layoutX="502.0" layoutY="427.0" prefHeight="24.0" prefWidth="77.0" text="0.00" AnchorPane.leftAnchor="502.0" AnchorPane.rightAnchor="341.0">
+            <font>
+                <Font name="Roboto Black" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtDiscountAmount" editable="false" layoutX="657.0" layoutY="422.0" onKeyReleased="#enableAddToCart" prefHeight="34.0" prefWidth="136.0" promptText="Discount">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Rectangle fx:id="SQBackToLogin" arcHeight="5.0" arcWidth="5.0" fill="#7f8c8d" height="46.0" layoutX="948.0" layoutY="8.0" onMouseClicked="#logoutMouseClicked" onMouseEntered="#BackButtonMouseEN" onMouseExited="#BackButtonMouseEX" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="42.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <JFXButton fx:id="btnClearForm" buttonType="RAISED" layoutX="787.0" layoutY="538.0" onAction="#clearItemFormOnAction" prefHeight="43.0" prefWidth="104.0" style="-fx-background-color: #7f8c8d;" text="Clear" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </JFXButton>
+        <ImageView fx:id="imgBackToLogin" fitHeight="36.0" fitWidth="33.0" layoutX="953.0" layoutY="14.0" onMouseClicked="#logoutMouseClicked" onMouseEntered="#BackButtonMouseEN" onMouseExited="#BackButtonMouseEX" preserveRatio="true">
+            <image>
+                <Image url="@./assets/icons8-back-arrow-50.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <Label layoutX="634.0" layoutY="489.0" text="Item Total : Rs." textFill="#616060">
+            <font>
+                <Font name="Roboto Black" size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="txtItemTotal" alignment="CENTER" layoutX="783.0" layoutY="487.0" prefHeight="29.0" prefWidth="111.0" text="0.00" textFill="#227093" AnchorPane.leftAnchor="783.0" AnchorPane.rightAnchor="26.0">
+            <font>
+                <Font name="Roboto Black" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtItemDesc" editable="false" layoutX="657.0" layoutY="322.0" onKeyReleased="#enableAddToCart" prefHeight="34.0" prefWidth="171.0" promptText="Description">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Label layoutX="329.0" layoutY="262.0" text="Enter Item Details">
+            <font>
+                <Font name="Open Sans ExtraBold" size="20.0" />
+            </font>
+        </Label>
+        <TextField layoutX="440.0" layoutY="31.0" prefHeight="32.0" prefWidth="261.0" promptText="Contact Number" />
+        <JFXButton layoutX="701.0" layoutY="31.0" prefHeight="32.0" prefWidth="67.0" style="-fx-background-color: #2c3e50;" text="FIND" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>
