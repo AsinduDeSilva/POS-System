@@ -29,7 +29,7 @@
         <TextField fx:id="txtItemPrice" layoutX="637.0" layoutY="80.0" prefHeight="24.0" prefWidth="302.0" promptText="Price" />
         <Label layoutX="533.0" layoutY="83.0" text="Item Price :" />
         <Separator layoutX="47.0" layoutY="253.0" prefHeight="0.0" prefWidth="887.0" />
-        <TableView fx:id="tblItems" layoutX="47.0" layoutY="291.0" prefHeight="334.0" prefWidth="887.0">
+        <TableView fx:id="tblItems" layoutX="47.0" layoutY="271.0" prefHeight="334.0" prefWidth="887.0">
             <columns>
                 <TableColumn fx:id="colItemID" prefWidth="87.0" text="Item ID" />
                 <TableColumn fx:id="colItemName" prefWidth="217.0" text="Item Name" />
@@ -39,7 +39,7 @@
                 <TableColumn fx:id="colExpireDate" prefWidth="129.33331298828125" text="Expire Date" />
             </columns>
         </TableView>
-        <JFXButton buttonType="RAISED" layoutX="840.0" layoutY="188.0" onAction="#btnAddOnAction" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #1abc9c;" text="ADD">
+        <JFXButton fx:id="btnADD" buttonType="RAISED" layoutX="840.0" layoutY="188.0" onAction="#btnAddOnAction" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #1abc9c;" text="ADD">
             <font>
                 <Font name="System Bold" size="13.0" />
             </font>
@@ -51,6 +51,16 @@
         </JFXButton>
         <DatePicker fx:id="pickerExpireDate" layoutX="637.0" layoutY="152.0" prefHeight="24.0" prefWidth="302.0" />
         <TextField fx:id="txtQty" layoutX="304.0" layoutY="80.0" prefHeight="24.0" prefWidth="144.0" promptText="Quantity On Hand" />
+        <JFXButton buttonType="RAISED" layoutX="840.0" layoutY="616.0" onAction="#btnEditOnAction" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #f1c40f;" text="Edit">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="730.0" layoutY="616.0" onAction="#btnDeleteOnAction" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #c0392b;" text="Delete" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </JFXButton>
 
     </children>
 </AnchorPane>

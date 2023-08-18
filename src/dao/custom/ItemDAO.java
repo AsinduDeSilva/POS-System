@@ -10,5 +10,7 @@ public interface ItemDAO extends SuperDAO {
     String getLastItemId() throws RuntimeException;
 
     ArrayList<Item> getAllItems();
+    Item getItemById(String itemId);
+    boolean updateItem(Item item);
 
 }
